@@ -1,0 +1,477 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Para facilitar o cálculo de largura e altura */
+}
+
+/* Estrutura do site */
+body {
+  background: #f4f2ec url(../img/fundo.png) repeat-x;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+article h3  {
+  color: #af670a;
+}
+a:link,
+a:visited,
+a:active {
+  color: #93784f;
+  font-size: 1.3rem;
+  padding: 20px;
+text-align: center;
+  text-decoration: none; /* Removido do nav ul */
+}
+.navbar-nav .nav-link {
+  margin: 0 20px; /* Adiciona margem lateral para espaçamento */
+}
+
+.navbar-nav {
+  list-style: none; /* Remove os marcadores */
+  padding: 0; /* Remove o padding */
+  margin-right: 20px; /* Remove a margem */
+  display: flex; /* Usar flexbox */
+  justify-content: flex-start; /* Alinha à esquerda */
+  margin: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff; /* Cor do texto ao passar o mouse */
+  font-size:22px; /* Padding normal */
+  padding-left: 2px;
+}
+#conteiner {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+/* Logo */
+
+#logo a {
+  margin-top: 30px;
+  margin-left: 20px;
+  background: url(../img/logo.png) no-repeat center;
+  width: 250px;
+  height: 50px;
+  display: block;
+  text-indent: -9999px;
+}
+
+/* Navegação */
+nav {
+  padding: 15px 0;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin: 20px;
+}
+
+nav ul li {
+  float: left;
+  margin-left: 25px; /* Mover para o li para melhor espaçamento */
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  font-size: 1.5em; /* Considere usar rem ou em */
+  display: block;
+  padding-bottom: 3px;
+}
+
+nav ul li a:hover {
+  color: rgb(51, 47, 47);
+  border-bottom: 1px solid #535858;
+}
+
+/* Conteúdo principal */
+#conteudo {
+  width: 710px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+article#video{
+  float: left;
+  width: 310px;
+  margin-left: 20px ;
+  margin: 15px 0 0 10px;
+
+  
+}
+
+article#mapa {
+  float: left;
+  width: 310px;
+  margin-left: 50px;
+  margin: 15px 0 0 10px;
+  }
+
+article#exposioes {
+  float: left;
+  width: 310px;
+margin: 15px 0 0 10px;
+
+}
+article#exposioes {
+  float: left;
+  width: 310px;
+  margin: 15px 10px 0 0; /* Margem superior e lateral */
+  text-align: left; /* Alinhamento à esquerda */
+  padding: 0; /* Remove qualquer espaço interno, se necessário */
+}
+
+article#exposioes li{
+  margin: 3px 10px 0 0; /* Margem superior e lateral */
+  text-align: left;
+
+}
+article#exposioes li a:hover{
+  color: #a29b81;
+}
+
+article#historia {
+  float: left;
+  width: 310px;
+  margin: 15px 0 0 10px;
+
+ 
+}
+
+aside {
+  width: 350px;
+  background: #af670a;
+  float: right;
+  margin-bottom: 20px;
+}
+#galeria{
+  margin-left: 30px;
+}
+
+section#visita{
+background: #cdc8b1;
+padding: 10px 27px 27px 27px;
+margin: 10px;
+}
+section#galeria a{
+display: block;
+background: url(../img/fundo-foto.png) no-repeat;
+float: left;
+padding: 15px ;
+}
+section#galeria  img{
+margin: 5px;
+margin-bottom: 30px;
+padding: 5px 6px 3px 1px;
+width: 100px;
+height: 100px;
+
+}
+
+h3 {
+  color: #3ab128;
+  font-size: 1.0em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  
+}
+ h4{
+color: #ef6c00;
+text-transform: uppercase;
+padding-bottom: 3px;
+margin-bottom: 0;
+
+ }
+ input{
+  height: 20px;
+  width: 80px;
+  background: #fff;
+  border: none;
+  font-size: 1.3em;
+ }
+input.campo{
+  border: 1px solid #ada484;
+}
+input.botao{
+background: #9b9271;
+color: white;
+width: 100%;
+height: 40px;
+font-size: 1.2em;
+}
+fieldset{
+  border: none;
+}
+legend{
+  display: none;
+}
+
+/* footer */
+footer{
+  clear: both;
+  padding: 20px 0 30px 0;
+  text-align: center;
+  background: url(../img/fundo-rodape.png) no-repeat center top;
+}
+footer>p a{
+  padding: 20px 15px;
+  font-size: 1.2em;
+}
+footer>p a:hover{
+  padding: 20px 15px;
+  color: #bbbbb4;
+  font-weight: 200;
+}
+span{
+  font-size: 1.2em;
+  color: #af670a;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estrutura do site */
+
+
+
+/* Media Queries para Responsividade */
+/* Media Queries para Responsividade */
+@media (max-width: 720px) {
+  #conteiner {
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article, #conteudo, aside {
+    float: none;
+    width: 100%;
+  }
+
+  article {
+    margin: 10px 0;
+  }
+
+  #galeria img {
+    width: 100%;
+    height: auto;
+  }
+
+  input.campo {
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+  section#visita {
+    background: #cdc8b1;
+    padding: 10px;
+    margin: 10px 0;
+  
+  }
+  
+  section#galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linhas */
+  }
+  
+  section#galeria a {
+    flex: 1 1 100px; /* Cada item ocupará pelo menos 100px */
+    margin: 5px; /* Espaço entre os itens */
+  }
+  
+  section#galeria img {
+    width: 100%; /* Imagens ocupam toda a largura do link */
+    height: auto; /* Mantém a proporção */
+  }
+  input.campo {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaço interno */
+  }
+  
+  input.botao {
+    background: #9b9271;
+    color: white;
+    width: 100%; /* Largura total */
+    height: 40px;
+    font-size: 1.2em;
+    margin-top: 10px; /* Espaço acima do botão */
+  }
+  #conteudo {
+    width: 100%; /* Ocupa toda a largura */
+    margin-bottom: 20px;
+  }
+  
+  article {
+    width: 100%; /* Artigos ocupam a largura total */
+    margin: 15px 0; /* Espaçamento vertical */
+  }
+  
+  aside {
+    width: 100%; /* Ocupa a largura total em telas pequenas */
+    background: #af670a;
+    margin-bottom: 20px;
+  }
+  footer {
+    clear: both;
+    padding: 20px 0;
+    text-align: center;
+    background: url(../img/fundo-rodape.png) no-repeat center top;
+  }
+  
+  footer > p a {
+    margin: 0 5px; /* Margem entre links */
+    font-size: 1.2em;
+  }
+  
+  @media (max-width: 720px) {
+    footer > p {
+      font-size: 1em; /* Ajusta tamanho da fonte */
+    }
+  }
+  /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Facilita o cálculo de largura e altura */
+}
+
+/* Estrutura do site */
+body {
+  background: #f4f2ec url(../img/fundo.png) repeat-x;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+#conteiner {
+  width: 100%; /* Largura total */
+  max-width: 1080px; /* Máximo para telas grandes */
+  margin: 0 auto; /* Centralizar */
+  padding: 0 10px; /* Espaçamento lateral */
+}
+
+/* Navegação */
+nav ul {
+  display: flex; /* Usar flexbox para a navegação */
+  justify-content: flex-end; /* Alinha à direita */
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 25px; /* Espaçamento entre itens */
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  display: block;
+  padding: 3px 10px; /* Espaço ao redor do texto */
+}
+
+@media (max-width: 720px) {
+ 
+}
+
+/* Conteúdo principal */
+#conteudo {
+  display: flex; /* Usar flexbox */
+  flex-wrap: wrap; /* Permite quebra de linha */
+  width: 100%; /* Ocupa toda a largura */
+  margin-bottom: 20px;
+}
+
+article {
+  width: 100%; /* Artigos ocupam a largura total */
+  margin: 15px 0; /* Margem vertical */
+}
+
+#video, #mapa, #exposioes, #historia {
+  flex: 1 1 calc(50% - 20px); /* 2 itens por linha com margem */
+  margin: 10px; /* Margem entre artigos */
+  background-color: #421f0549;
+ 
+ 
+}
+#historia {
+  color: #535858;
+
+} 
+#exposioes{
+  color: #535858;
+}
+#mapa{
+  color: #535858;
+}
+
+aside {
+  width: 100%; /* Ocupa a largura total em telas pequenas */
+  background-color: #421f0549;
+  margin-bottom: 20px;
+}
+
+/* Galeria */
+section#galeria {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linhas */
+}
+
+section#galeria a {
+  flex: 1 1 100px; /* Cada item ocupará pelo menos 100px */
+  margin: 5px; /* Espaço entre os itens */
+}
+
+section#galeria img {
+  width: 100%; /* Imagens ocupam toda a largura do link */
+  height: auto; /* Mantém a proporção */
+}
+
+/* Formulário */
+section#visita {
+  background: #56555375;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+input.campo {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaço interno */
+}
+
+input.botao {
+  background: #88773a;
+  color: rgb(132, 87, 87);
+  width: 100%; /* Largura total */
+  height: 40px;
+  font-size: 1.2em;
+  margin-top: 10px; /* Espaço acima do botão */
+}
+
+/* Footer */
+footer {
+  clear: both;
+  padding: 20px 0;
+  text-align: center;
+  background: url(../img/fundo-rodape.png) no-repeat center top;
+}
+
+footer > p a {
+  margin: 0 5px; /* Margem entre links */
+  font-size: 1.2em;
+}
+
+
+}
