@@ -7,6 +7,7 @@
 
 /* Estrutura do site */
 body {
+  width: 100%;
   background: #f4f2ec url(../img/fundo.png) repeat-x;
   font-family: Arial, Helvetica, sans-serif;
  
