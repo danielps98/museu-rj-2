@@ -242,7 +242,7 @@ span{
 
 /* Media Queries para Responsividade */
 /* Media Queries para Responsividade */
-@media (max-width: 720px) {
+@media (max-width: 560px) {
   #conteiner {
     width: 100%;
     padding: 0 10px;
@@ -336,7 +336,7 @@ span{
     font-size: 1.2em;
   }
   
-  @media (max-width: 720px) {
+  @media (min-width: 720px) {
     footer > p {
       font-size: 1em; /* Ajusta tamanho da fonte */
     }
