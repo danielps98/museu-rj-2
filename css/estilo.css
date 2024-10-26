@@ -248,7 +248,19 @@ span{
     width: 100%;
     padding: 0 10px;
   }
-  
+  body {
+    background: #f4f2ec url(../img/fundo.png) repeat-x;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+  }
+  img {
+    width: 80%; /* Reduz a largura para 80% em telas muito pequenas, se necessário */
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block; /* Para garantir que a imagem seja tratada como um bloco */
+}
+}
 
   nav ul {
     flex-direction: column;
